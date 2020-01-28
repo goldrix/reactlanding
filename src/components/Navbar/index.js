@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import './style.css'
+import {NavLink} from 'react-router-dom'
 
 const Navbar =(props)=>{    
 
@@ -23,9 +24,9 @@ const[search, setSearch] = useState(false);
     return(
         <div className="navbar">
             <ul className="navbarMenu">
-                <li><a hreaf="#">About me</a></li>    
-                <li><a hreaf="#">About me</a></li>    
-                <li><a hreaf="#">About me</a></li>    
+                <li><NavLink to="/">Home</NavLink></li>    
+                <li><NavLink to="about-us">About us</NavLink></li>    
+                <li><NavLink to="contact-us">Contact-us</NavLink></li>    
                 
             </ul>
             <div className="search">
